@@ -6,7 +6,7 @@ web_data = requests.get(main_url)
 soup = BeautifulSoup(web_data.text,'lxml')
 '''
 #content > div.person_add_top.no_ident_top > div.per_ad_left > div.col_sub.mainTitle > h1
-#index_show > ul.mtit_con_left.fl > li.time
+#index_show > ul.mtit_con_left.fl > li.timeaa
 
 '''
 select = soup.select('td.t a.t')
@@ -50,6 +50,5 @@ for url in page_link:
 
     if(data!={'title': ['null'], 'price': ['null'], 'places': ['null'], 'time': ['null']}):
         print(data)
-
 
 
